@@ -1,0 +1,26 @@
+/*Main-Page containers*/
+#main-page{
+    min-width: 100vh;
+    min-height: 100vh;
+}
+/*//////////////////////////////////////////////*/
+
+/*News-Info containers*/
+.news-info-container{
+    margin: 10px 20px 0 20px;
+    border: solid 3px black;
+}
+
+.title-news-info_1{
+    margin: 0 20%;
+}
+
+.title-news-info_2{
+    margin: 0 15%;
+}
+
+#news-info{
+    min-width: 100vh;
+    min-height: 100vh;
+}
+/*/////////////////////////////////////////////*/

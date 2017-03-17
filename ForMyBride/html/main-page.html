@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<section ng-controller="MainPageCtrl as ctrl">
+    <ul class="navigation font-harry-potter size-small-middle">
+        <li class="nav-item">
+            <a ng-click="ctrl.ToNewsInfo()" ng-bind="'Биография Тонечки'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToLoveStory()" ng-bind="'Я и Тоня'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToExam()" ng-bind="'Магический экзамен'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToExamResult()" ng-bind="'Лучший факультет'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToHarryPotter()" ng-bind="'Библиотека'"></a>
+        </li>
+    </ul>
+
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+
+    <div class="site-wrap">
+        <div id="main-page" class="main-page-fon">
+            <!-- we can do there anythings! -->
+        </div>
+    </div>
+</section>

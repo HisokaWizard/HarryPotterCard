@@ -1,0 +1,36 @@
+/*#bh-div{*/
+    /*cursor: url("../image/1.cur"), auto;*/
+/*}*/
+
+/*#bh-div a:hover{*/
+    /*cursor: url("../image/2.cur"), auto;*/
+/*}*/
+
+/*.bh-fon{*/
+    /*/!*background: #31708f url("../image/map_maroder.jpg") no-repeat;*!/*/
+    /*background-size: cover;*/
+/*}*/
+
+.main-page-fon{
+    background: #31708f url("../image/Main-page-fon-2.png") no-repeat;
+    background-size: cover;
+    cursor: url("../image/1.cur"), auto;
+}
+
+.news-info-page{
+    background: #31708f url("../image/seamless-textured-paper-background.jpg") repeat;
+    /*background-size: cover;*/
+    cursor: url("../image/1.cur"), auto;
+}
+
+.love-story-fon{
+    background: #31708f url("../image/bonfire.png") repeat;
+    /*background-size: cover;*/
+    cursor: url("../image/1.cur"), auto;
+}
+
+.library-hp{
+    background: #31708f url("../image/rusted_metal-grunge_background.jpg") repeat;
+    /*background-size: cover;*/
+    cursor: url("../image/1.cur"), auto;
+}

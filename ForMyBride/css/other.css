@@ -1,0 +1,50 @@
+/*Навигационный бар*/
+ul.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(rgb(15, 14, 10), rgb(0, 85, 129));
+}
+
+ul.top-nav li {
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+ul.top-nav li a {
+    display: block;
+    color: sandybrown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.top-nav li a:hover:not(.active) {
+    background: linear-gradient(rgb(0, 85, 129), rgb(51, 171, 211));
+}
+
+ul.top-nav li a.active {
+    background-color: #4CAF50;
+}
+
+ul.top-nav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 500px){
+    ul.top-nav li.right, ul.top-nav li {
+        float: none;
+    }
+}
+
+.left-float-position{
+    float: left;
+    margin: 10px;
+}
+
+.right-float-position{
+    float: right;
+    margin: 10px;
+}

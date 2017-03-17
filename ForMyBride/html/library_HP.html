@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<section ng-controller="LibraryCtrl as ctrl">
+    <ul class="navigation font-harry-potter size-small-middle">
+        <li class="nav-item">
+            <a ng-click="ctrl.ToNewsInfo()" ng-bind="'Биография Тонечки'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToLoveStory()" ng-bind="'Я и Тоня'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToExam()" ng-bind="'Магический экзамен'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToExamResult()" ng-bind="'Лучший факультет'"></a>
+        </li>
+        <li class="nav-item">
+            <a ng-click="ctrl.ToHarryPotter()" ng-bind="'Библиотека'"></a>
+        </li>
+    </ul>
+
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+
+    <div class="site-wrap">
+        <div class="library-hp">
+            <div class="container">
+                <div class="font-hogwards-wizard size-x-large font-bold" style="color: #c12e2a;">
+                    <p>Вселенная Гарри Поттера!</p>
+                    <div class="row size-large font-normal">
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                            <img style="float: left" src="image/hpps.jpg" width="180" height="270">
+                            <p class="font-harry-potter" style="color: gold">Гарри Поттер и филосовский камень</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                            <button class="btn btn-info">Читать книгу</button>
+                            <a type="button" class="btn btn-info" ng-bind="'Посмотреть фильм на GidOnline'" href="http://gidonline.club/2011/07/garri-potter-i-filosofskij-kamen/"></a>
+                            <button class="btn btn-info" ng-click="ctrl.HPPS()">Смотреть фильм</button>
+                            <div ng-if="ctrl.HPPS_flag">
+                                <video src="video/1234.mp4" controls poster="image/hpps.jpg"></video>
+                                <iframe width="800" height="600"
+                                        src="https://www.youtube.com/embed/U10pcJ4mCbA?list=PLY7PmJJFH5nTO0pgTa4gDzgvMzrmZ4QtL"
+                                        frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                            <img style="float: left" src="image/688.jpg" width="180" height="270">
+                            <p class="font-harry-potter" style="color: gold">Гарри Поттер и тайная комната</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                            <button class="btn btn-info">Читать книгу</button>
+                            <a type="button" class="btn btn-info" ng-bind="'Посмотреть фильм на GidOnline'" href="http://gidonline.club/2011/07/garri-potter-i-tajnaya-komnata/"></a>
+                            <button class="btn btn-info">Смотреть фильм</button>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                            <img style="float: left" src="image/hp-ua.jpg" width="180" height="270">
+                            <p class="font-harry-potter" style="color: gold">Гарри Поттер и узник азкабана</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                            <button class="btn btn-info">Читать книгу</button>
+                            <a type="button" class="btn btn-info" ng-bind="'Посмотреть фильм на GidOnline'" href="http://gidonline.club/2011/07/garri-potter-i-uznik-azkabana/"></a>
+                            <button class="btn btn-info">Смотреть фильм</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
