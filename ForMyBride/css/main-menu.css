@@ -87,7 +87,7 @@ label[for="nav-trigger"] {
 }
 
 /* Make the Magic Happen */
-.nav-trigger + label, .site-wrap {
+.nav-trigger + label + #main-page, .site-wrap {
     transition: left 0.4s;
 }
 
@@ -95,7 +95,7 @@ label[for="nav-trigger"] {
     left: 200px;
 }
 
-.nav-trigger:checked ~ .site-wrap {
+.nav-trigger:checked ~ .site-wrap{
     left: 200px;
     transition: left 0.4s;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);

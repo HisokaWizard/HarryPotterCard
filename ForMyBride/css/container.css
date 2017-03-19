@@ -1,15 +1,79 @@
 /*Main-Page containers*/
 #main-page{
-    min-width: 100vh;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 220vh;
     min-height: 100vh;
 }
 /*//////////////////////////////////////////////*/
 
 /*News-Info containers*/
+@media (min-width: 1000px) {
+    .container-width-news-info {
+        width: 960px;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-width-news-info {
+        width: 1160px;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container-width-news-info {
+        width: 1310px;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container-width-news-info {
+        width: 1460px;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .container-width-news-info {
+        width: 1660px;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;
+    }
+}
+
+@media (min-width: 1900px) {
+    .container-width-news-info {
+        width: 1860px;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;
+    }
+}
+
 .news-info-container{
     margin: 10px 20px 0 20px;
     border: solid 3px black;
 }
+
+.image-adaptive{
+    width: 100%;
+    background-size: cover;
+}
+
 
 .title-news-info_1{
     margin: 0 20%;
