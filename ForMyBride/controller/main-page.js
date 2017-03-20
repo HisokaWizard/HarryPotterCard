@@ -3,8 +3,11 @@
 app.controller("MainPageCtrl", function($location){
     var _public = this;
 
-    _public.exam_id="0";
+    _public.ToMain = function(){
+        $location.path("/");
+    };
 
+    _public.exam_id="0";
     _public.ToExam = function(){
         $location.path("/exam/"+_public.exam_id);
     };

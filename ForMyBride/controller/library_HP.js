@@ -13,8 +13,28 @@ app.controller("LibraryCtrl", function($location){
         }
     };
 
-    _public.GoToGidOnlineHPPS = function(){
-        //$location.path("http://gidonline.club/2011/07/garri-potter-i-filosofskij-kamen/");
+    _public.ToMain = function(){
+        $location.path("/");
+    };
 
+    _public.exam_id="0";
+    _public.ToExam = function(){
+        $location.path("/exam/"+_public.exam_id);
+    };
+
+    _public.ToNewsInfo = function(){
+        $location.path("/news-info");
+    };
+
+    _public.ToLoveStory = function(){
+        $location.path("/love-story");
+    };
+
+    _public.ToExamResult = function(){
+        $location.path("/result");
+    };
+
+    _public.ToHarryPotter = function(){
+        $location.path("/lib_HP");
     };
 });

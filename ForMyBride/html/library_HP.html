@@ -2,6 +2,9 @@
 <section ng-controller="LibraryCtrl as ctrl">
     <ul class="navigation font-harry-potter size-small-middle">
         <li class="nav-item">
+            <a ng-click="ctrl.ToMain()" ng-bind="'Главная'"></a>
+        </li>
+        <li class="nav-item">
             <a ng-click="ctrl.ToNewsInfo()" ng-bind="'Биография Тонечки'"></a>
         </li>
         <li class="nav-item">
@@ -23,7 +26,7 @@
 
     <div class="site-wrap">
         <div class="library-hp">
-            <div class="container">
+            <div class="container fon-libHP-container">
                 <div class="font-hogwards-wizard size-x-large font-bold" style="color: #c12e2a;">
                     <p>Вселенная Гарри Поттера!</p>
                     <div class="row size-large font-normal">

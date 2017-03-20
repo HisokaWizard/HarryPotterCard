@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <section ng-controller="LoveStoryCtrl as ctrl">
+
     <ul class="navigation font-harry-potter size-small-middle">
+        <li class="nav-item">
+            <a ng-click="ctrl.ToMain()" ng-bind="'Главная'"></a>
+        </li>
         <li class="nav-item">
             <a ng-click="ctrl.ToNewsInfo()" ng-bind="'Биография Тонечки'"></a>
         </li>
@@ -25,97 +29,37 @@
         <div class="love-story-fon">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 font-lumos size-large font-bold" style="background: rgba(255,255,255,0.8)">
-                        <div ng-bind="'Наша с Тоней история, с самого начала и по сей день!'" align="center">
+                    <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 font-harry-potter size-large fon-love-story-container">
+                        <div class="font-bold" ng-bind="'Наша с Тоней история, с самого начала и по сей день!'" align="center"> </div>
+                        <div class="font-hogwards-wizard size-middle font-bold title-position" ng-bind="ctrl.Object['Acquaintance'].Title"></div>
+                        <div class="font-hogwards-wizard size-middle font-normal body-position" ng-bind="ctrl.Object['Acquaintance'].Body"></div>
+                        <div class="border-image">
+                            <a href="image/for_love_story/acquaintance_1.png" data-fancybox="group_first" data-caption="Тонечка с подругами на даче, я правда их еще тогда не знал, само собой!">
+                                <img src="image/for_love_story/acquaintance_1.png" width="160" tabindex="0"/>
+                            </a>
+                            <a href="image/for_love_story/acquaintance_2.png" data-fancybox="group_first" data-caption="Какая-то, спящая Зайка, на природе.">
+                                <img src="image/for_love_story/acquaintance_2.png" width="218" tabindex="0"/>
+                            </a>
+                            <a href="image/for_love_story/acquaintance_3.png" data-fancybox="group_first" data-caption="Опасная малышка, с топориком.">
+                                <img src="image/for_love_story/acquaintance_3.png" width="282" tabindex="0"/>
+                            </a>
+                            <a href="image/for_love_story/acquaintance_4.png" data-fancybox="group_first" data-caption="Мастер покроя крыши.">
+                                <img src="image/for_love_story/acquaintance_4.png" width="286" tabindex="0"/>
+                            </a>
                         </div>
-                        <div class="size-small-middle" style="padding: 10px">
-                            <div>
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                <div>
-                                    <img src="../image/for_love_story/1.png">
-                                    <img src="../image/for_love_story/15.png">
-                                    <img src="../image/for_love_story/3.png">
-                                    <img src="../image/for_love_story/4.png">
-                                </div>
-                            </div>
-                            <div>
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                <div>
-                                    <img src="../image/for_love_story/1.png">
-                                    <img src="../image/for_love_story/15.png">
-                                    <img src="../image/for_love_story/3.png">
-                                    <img src="../image/for_love_story/4.png">
-                                </div>
-                            </div>
-                            <div>
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                <div>
-                                    <img src="../image/for_love_story/1.png">
-                                    <img src="../image/for_love_story/15.png">
-                                    <img src="../image/for_love_story/3.png">
-                                    <img src="../image/for_love_story/4.png">
-                                </div>
-                            </div>
-                            <div>
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                <div>
-                                    <img src="../image/for_love_story/1.png">
-                                    <img src="../image/for_love_story/15.png">
-                                    <img src="../image/for_love_story/3.png">
-                                    <img src="../image/for_love_story/4.png">
-                                </div>
-                            </div>
-                            <div>
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--Content--
-                                <div>
-                                    <img src="../image/for_love_story/1.png">
-                                    <img src="../image/for_love_story/15.png">
-                                    <img src="../image/for_love_story/3.png">
-                                    <img src="../image/for_love_story/4.png">
-                                </div>
-                            </div>
+                        <!--/////////////////////////////////////////////////////////////////////////////////////////////// -->
+                        <div class="font-hogwards-wizard size-middle font-bold title-position" ng-bind="ctrl.Object['OurMeetInVk'].Title"></div>
+                        <div class="border-image">
+                            <a class="left-float-position" href="image/for_love_story/OurMeetInVk.png" data-fancybox data-caption="Наша первая переписка! Да уж, ну я и безграмотный!">
+                                <img src="image/for_love_story/OurMeetInVk.png" width="300" tabindex="0"/>
+                            </a>
                         </div>
+                        <div class="font-hogwards-wizard size-middle font-normal body-position" ng-bind="ctrl.Object['OurMeetInVk'].Body"></div>
                     </div>
                 </div>
             </div>
-            <div class="container" style="background: rgba(255,255,255,0.5)" align="center">
-                rrrrrrrrrrrrrrrrrrrrrrrrrr
-                rrhrvhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-                hhhhhhhhhhhhhhhhhhhhhhhvrtrtrtrtrt
-                rtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtyv
-                rrrrrrrrrrrrrrrrrrrrrrrrrr
-                rrhrvhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-                hhhhhhhhhhhhhhhhhhhhhhhvrtrtrtrtrt
-                rtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtyv
-                rrrrrrrrrrrrrrrrrrrrrrrrrr
-                rrhrvhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-                hhhhhhhhhhhhhhhhhhhhhhhvrtrtrtrtrt
-                rtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtyv
+            <div class="container fon-love-story-container-footer font-harry-potter" align="center">
+                <p class="size-middle" ng-bind="'&#169; Все права защищены! Доступ к правам только у Тонечки!'"></p>
             </div>
         </div>
     </div>

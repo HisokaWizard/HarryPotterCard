@@ -24,13 +24,17 @@
 }
 
 .love-story-fon{
-    background: #31708f url("../image/bonfire.png") repeat;
+    background: #31708f url("../image/love-story-2.jpeg") repeat;
     /*background-size: cover;*/
     cursor: url("../image/1.cur"), auto;
 }
 
 .library-hp{
-    background: #31708f url("../image/rusted_metal-grunge_background.jpg") repeat;
+    background: #31708f url("../image/lib-hp-2.jpeg") repeat;
     /*background-size: cover;*/
     cursor: url("../image/1.cur"), auto;
+}
+
+.fon-libHP-container{
+    background: rgba(200,200,200,0.90);
 }
