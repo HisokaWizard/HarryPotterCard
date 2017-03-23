@@ -71,6 +71,13 @@
     width: 0;
 }
 
+.nav-trigger-news-info {
+    /* critical styles - hide the checkbox input */
+    display: block;
+    height: 0;
+    width: 0;
+}
+
 label[for="nav-trigger"] {
     /* critical positioning styles */
     position: fixed;
@@ -80,7 +87,22 @@ label[for="nav-trigger"] {
     height: 50px;
     width: 50px;
     /*cursor: pointer;*/
-    background-image: url("../image/menu.png");
+    background-image: url("../image/menu_white.png");
+    background-size: contain;
+
+    cursor: url("../image/3.cur"), auto;
+}
+
+label[for="nav-trigger-news-info"] {
+    /* critical positioning styles */
+    position: fixed;
+    z-index: 2;
+
+    /* non-critical apperance styles */
+    height: 50px;
+    width: 50px;
+    /*cursor: pointer;*/
+    background-image: url("../image/menu_black.png");
     background-size: contain;
 
     cursor: url("../image/3.cur"), auto;
@@ -100,23 +122,25 @@ label[for="nav-trigger"] {
     transition: left 0.4s;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
 }
+/* /////////////////////////////////////////////// */
+.nav-trigger-news-info + label + #main-page, .site-wrap {
+    transition: left 0.4s;
+}
 
+.nav-trigger-news-info:checked + label {
+    left: 200px;
+}
+
+.nav-trigger-news-info:checked ~ .site-wrap{
+    left: 200px;
+    transition: left 0.4s;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
+}
+/*///////////////////////////////////////////////////////////*/
 body {
     /* Without this, the body has excess horizontal scroll when the menu is open */
     overflow-x: hidden;
 }
-
-/* Additional non-critical styles */
-
-/*h1, h3, p {*/
-    /*max-width: 600px;*/
-    /*margin: 0 auto 1em;*/
-/*}*/
-
-/*code {*/
-    /*padding: 2px;*/
-    /*background: #ddd;*/
-/*}*/
 
 /* Micro reset */
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}

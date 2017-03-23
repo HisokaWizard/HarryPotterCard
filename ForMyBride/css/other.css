@@ -4,14 +4,14 @@
 }
 
 .left-float-position-article-image-big{
-    width: 70%;
+    width: 50%;
     float: left;
     margin: 10px;
 }
 
 
 .left-float-position-article-image-middle{
-    width: 45%;
+    width: 40%;
     float: left;
     margin: 10px;
 }
@@ -28,14 +28,14 @@
 }
 
 .right-float-position-article-image-big{
-    width: 70%;
+    width: 50%;
     float: right;
     margin: 10px;
 }
 
 
 .right-float-position-article-image-middle{
-    width: 45%;
+    width: 40%;
     float: right;
     margin: 10px;
 }
@@ -44,4 +44,8 @@
     width: 30%;
     float: right;
     margin: 10px;
+}
+
+.center-position-news-info-down{
+    margin-left: 40%;
 }

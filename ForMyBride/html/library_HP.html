@@ -27,45 +27,105 @@
     <div class="site-wrap">
         <div class="library-hp">
             <div class="container fon-libHP-container">
-                <div class="font-hogwards-wizard size-x-large font-bold" style="color: #c12e2a;">
-                    <p>Вселенная Гарри Поттера!</p>
+                <div>
+                    <p align="center" class="size-xx-large font-harry-potter font-bold" ng-bind="'Вселенная Гарри Поттера!'"></p>
                     <div class="row size-large font-normal">
-                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
-                            <img style="float: left" src="image/hpps.jpg" width="180" height="270">
-                            <p class="font-harry-potter" style="color: gold">Гарри Поттер и филосовский камень</p>
-                        </div>
-                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
-                            <button class="btn btn-info">Читать книгу</button>
-                            <a type="button" class="btn btn-info" ng-bind="'Посмотреть фильм на GidOnline'" href="http://gidonline.club/2011/07/garri-potter-i-filosofskij-kamen/"></a>
-                            <button class="btn btn-info" ng-click="ctrl.HPPS()">Смотреть фильм</button>
-                            <div ng-if="ctrl.HPPS_flag">
-                                <video src="video/1234.mp4" controls poster="image/hpps.jpg"></video>
-                                <iframe width="800" height="600"
-                                        src="https://www.youtube.com/embed/U10pcJ4mCbA?list=PLY7PmJJFH5nTO0pgTa4gDzgvMzrmZ4QtL"
-                                        frameborder="0" allowfullscreen>
-                                </iframe>
+
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 view-every-block">
+                            <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 block-every-elem">
+                                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                                    <a class="float-left-with-poster" href="image/hpps.jpg" data-fancybox data-caption="Harry Potter and the philosopher`s stone">
+                                        <img src="image/hpps.jpg" width="200"/>
+                                    </a>
+                                    <p class="font-harry-potter align-text-title size-xx-large" ng-bind="'Гарри Поттер и филосовский камень'"></p>
+                                </div>
+                                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 font-harry-potter">
+                                    <a type="button" class="btn btn-info size-middle font-color-black font-bold"
+                                       ng-bind="'Читать книгу'"
+                                       href="http://librebook.ru/harry_potter_and_the_sorcerer_s_stone">
+                                    </a>
+                                    <a type="button" class="btn btn-info size-middle font-color-black font-bold"
+                                       ng-bind="'Посмотреть фильм на GidOnline'"
+                                       href="http://gidonline.club/2011/07/garri-potter-i-filosofskij-kamen">
+                                    </a>
+                                    <button class="btn btn-info size-middle font-color-black font-bold"
+                                            ng-click="ctrl.HPPS()" ng-bind="'Смотреть трейлер'">
+                                    </button>
+                                    <div ng-if="ctrl.HPPS_flag">
+                                        <iframe width="1000" height="720"
+                                                src="https://www.youtube.com/embed/kVMHzux0HCM?list=PLbSEBLdLyEbezNuiiT5Mw-IjN1oRV5Ac2"
+                                                frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
-                            <img style="float: left" src="image/688.jpg" width="180" height="270">
-                            <p class="font-harry-potter" style="color: gold">Гарри Поттер и тайная комната</p>
+
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 view-every-block">
+                            <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 block-every-elem">
+                                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                                    <a class="float-left-with-poster" href="image/688.jpg" data-fancybox data-caption="Harry Potter and the chamber of secret">
+                                        <img src="image/688.jpg" width="200"/>
+                                    </a>
+                                    <p class="font-harry-potter align-text-title size-xx-large" ng-bind="'Гарри Поттер и тайная комната'"></p>
+                                </div>
+                                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 font-harry-potter">
+                                    <a type="button" class="btn btn-info size-middle font-color-black font-bold"
+                                       ng-bind="'Читать книгу'"
+                                       href="http://librebook.ru/harry_potter_and_the_chamber_of_secrets">
+                                    </a>
+                                    <a type="button" class="btn btn-info size-middle font-color-black font-bold"
+                                       ng-bind="'Посмотреть фильм на GidOnline'"
+                                       href="http://gidonline.club/2011/07/garri-potter-i-tajnaya-komnata">
+                                    </a>
+                                    <button class="btn btn-info size-middle font-color-black font-bold"
+                                            ng-click="ctrl.HPCS()" ng-bind="'Смотреть трейлер'">
+                                    </button>
+                                    <div ng-if="ctrl.HPCS_flag">
+                                        <iframe width="1000" height="720"
+                                                src="https://www.youtube.com/embed/tLdiEEO8KyA?list=PLbSEBLdLyEbezNuiiT5Mw-IjN1oRV5Ac2"
+                                                frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
-                            <button class="btn btn-info">Читать книгу</button>
-                            <a type="button" class="btn btn-info" ng-bind="'Посмотреть фильм на GidOnline'" href="http://gidonline.club/2011/07/garri-potter-i-tajnaya-komnata/"></a>
-                            <button class="btn btn-info">Смотреть фильм</button>
+
+                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 view-every-block">
+                            <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 block-every-elem">
+                                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                                    <a class="float-left-with-poster" href="image/hp-ua.jpg" data-fancybox data-caption="Harry Potter and the prisoner of Azkaban">
+                                        <img src="image/hp-ua.jpg" width="200"/>
+                                    </a>
+                                    <p class="font-harry-potter align-text-title size-xx-large" ng-bind="'Гарри Поттер и узник азкабана'"></p>
+                                </div>
+                                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 font-harry-potter">
+                                    <a type="button" class="btn btn-info size-middle font-color-black font-bold"
+                                       ng-bind="'Читать книгу'"
+                                       href="http://librebook.ru/harry_potter_and_the_prisoner_of_azkaban">
+                                    </a>
+                                    <a type="button" class="btn btn-info size-middle font-color-black font-bold"
+                                       ng-bind="'Посмотреть фильм на GidOnline'"
+                                       href="http://gidonline.club/2011/07/garri-potter-i-uznik-azkabana">
+                                    </a>
+                                    <button class="btn btn-info size-middle font-color-black font-bold"
+                                            ng-click="ctrl.HPCA()" ng-bind="'Смотреть трейлер'">
+                                    </button>
+                                    <div ng-if="ctrl.HPCA_flag">
+                                        <iframe width="1000" height="720"
+                                                src="https://www.youtube.com/embed/LcmHGSjv4PE?list=PLbSEBLdLyEbezNuiiT5Mw-IjN1oRV5Ac2"
+                                                frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
-                            <img style="float: left" src="image/hp-ua.jpg" width="180" height="270">
-                            <p class="font-harry-potter" style="color: gold">Гарри Поттер и узник азкабана</p>
-                        </div>
-                        <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
-                            <button class="btn btn-info">Читать книгу</button>
-                            <a type="button" class="btn btn-info" ng-bind="'Посмотреть фильм на GidOnline'" href="http://gidonline.club/2011/07/garri-potter-i-uznik-azkabana/"></a>
-                            <button class="btn btn-info">Смотреть фильм</button>
-                        </div>
+
                     </div>
                 </div>
+            </div>
+            <div class="container fon-love-story-container-footer font-harry-potter" align="center">
+                <p class="size-middle" ng-bind="'&#169; Все права защищены! Доступ к правам только у Тонечки!'"></p>
             </div>
         </div>
     </div>

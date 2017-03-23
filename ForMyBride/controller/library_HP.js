@@ -13,6 +13,26 @@ app.controller("LibraryCtrl", function($location){
         }
     };
 
+    _public.HPCS_flag = false;
+    _public.HPCS = function(){
+        if(_public.HPCS_flag){
+            return _public.HPCS_flag = false;
+        }
+        else{
+            return _public.HPCS_flag = true;
+        }
+    };
+
+    _public.HPCA_flag = false;
+    _public.HPCA = function(){
+        if(_public.HPCA_flag){
+            return _public.HPCA_flag = false;
+        }
+        else{
+            return _public.HPCA_flag = true;
+        }
+    };
+
     _public.ToMain = function(){
         $location.path("/");
     };

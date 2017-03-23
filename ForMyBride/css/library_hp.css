@@ -1,0 +1,26 @@
+.float-left-with-poster{
+    float: left;
+    margin: 10px 10px 10px 40px;
+    box-shadow: 0 4px 8px 10px rgba(223, 33, 24, 0.9), 0 6px 20px 30px rgba(233 ,33, 24, 0.25);
+}
+
+.float-left-with-poster:hover{
+    box-shadow: 0 4px 8px 10px rgba(73, 73, 278, 0.5), 0 6px 20px 30px rgba(73, 73, 278, 0.25);
+}
+
+.align-text-title{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.view-every-block{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.block-every-elem{
+    border: 7px double #255625;
+    border-radius: 5%;
+    padding: 10px;
+
+}
