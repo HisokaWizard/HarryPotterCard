@@ -1,12 +1,23 @@
 /*Main-Page containers*/
 #main-page{
-    position: fixed;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    min-width: 220vh;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    min-width: 100vh;
     min-height: 100vh;
 }
+
+#test-tonya{
+     min-width: 100vh;
+     min-height: 100vh;
+ }
+
+#test-result{
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
 /*//////////////////////////////////////////////*/
 
 /*News-Info containers*/

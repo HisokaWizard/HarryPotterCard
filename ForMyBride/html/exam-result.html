@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<section ng-controller="ExamSOVCtrl as ctrl">
+<section ng-controller="ExamSOVCtrl as ctrl" id="test-result" class="fon-test-result">
     <div class="container">
         <h1>Таблица результатов! А где в ней ты?</h1>
         <table class="table table-bordered">
@@ -8,7 +8,7 @@
                 <td ng-bind="student.first_name"></td>
                 <td ng-bind="student.last_name"></td>
                 <td ng-bind="student.facultet"></td>
-                <td ng-bind="'Правильных ответов: '+student.result_test"></td>
+                <td ng-controller="ExamSOVBeginCtrl as ex_ctrl" ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length"></td>
             </tr>
         </table>
         <button class="btn btn-success" ng-click="ctrl.ToMain()" ng-bind="'На главную'"></button>

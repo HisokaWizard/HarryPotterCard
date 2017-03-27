@@ -28,6 +28,26 @@ app.controller("ExamSOVBeginCtrl", function($http, $location, $routeParams, Test
     _public.GetResult = function(){
         return sumTrueAnswer.getSum();
     };
+
+    _public.InitChecking = function(){
+        var val_1 = document.getElementsByName("tonya_answer_1");
+        var val_2 = document.getElementsByName("tonya_answer_2");
+        var val_3 = document.getElementsByName("tonya_answer_3");
+        var val_4 = document.getElementsByName("tonya_answer_4");
+        var val_5 = document.getElementsByName("tonya_answer_5");
+        var val_6 = document.getElementsByName("tonya_answer_6");
+        if ((val_1[0].type == "radio" && val_1[0].checked) ||
+            (val_2[0].type == "radio" && val_2[0].checked) ||
+            (val_3[0].type == "radio" && val_3[0].checked) ||
+            (val_4[0].type == "radio" && val_4[0].checked) ||
+            (val_5[0].type == "radio" && val_5[0].checked) ||
+            (val_6[0].type == "radio" && val_6[0].checked)) {
+            _public.CheckFlag = true;
+        }
+        else{
+            _public.CheckFlag = false;
+        }
+    };
 });
 
 app.factory("TestF", function(){
