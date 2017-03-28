@@ -38,3 +38,12 @@ exports.removeById = function(id, cb){
         }
     );
 };
+
+exports.removeAll = function(cb){
+    db.get().collection('students').deleteMany(
+        {},
+        function (err, result) {
+            cb(err, result);
+        }
+    );
+};

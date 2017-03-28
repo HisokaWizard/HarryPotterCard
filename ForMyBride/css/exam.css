@@ -1,0 +1,78 @@
+.font-effect{
+    font-weight: bolder;
+    font-size: 70px;
+    color: rgba(75, 0, 130, 0.8);
+    text-shadow: 3px 10px 5px rgba(234, 23, 33, 0.5), 7px 20px 13px rgba(234, 23, 33, 0.3), 7px -20px 13px rgba(234, 23, 33, 0.3);
+}
+
+.font-effect-2{
+    font-weight: bolder;
+    font-size: 100px;
+    color: rgba(218,165,32,0.7);
+    text-shadow: 3px 10px 5px rgba(234, 23, 33, 0.5), 7px 20px 13px rgba(234, 23, 33, 0.3), 7px -20px 13px rgba(234, 23, 33, 0.3);
+}
+
+.font-effect-3{
+    font-weight: bolder;
+    color: rgba(12,16,232,0.7);
+    text-shadow: 3px 10px 5px rgba(218,165,32,0.5), 7px 20px 13px rgba(218,165,32,0.3), 7px -20px 13px rgba(218,165,32,0.3);
+}
+
+.font-margin-title{
+    margin: 20px;
+}
+
+.font-margin-choice{
+    margin-bottom: 30px;
+}
+
+.font-margin-button{
+    margin: 20px;
+}
+
+.font-margin-button:hover{
+    margin: 20px;
+    color: rgba(12,12,2,0.7);
+    text-shadow: 3px 7px 5px rgba(10,10,32,0.4), 3px -7px 5px rgba(10,10,32,0.3);
+}
+
+.table-border-result-exam{
+    border: solid rgba(20,20,20, 0.8) 4px;
+}
+
+.table-border-result-exam-bottom{
+    border-bottom: solid rgba(20,20,20, 0.8) 4px;
+
+}
+
+.table-border-result-exam-right{
+    border-right: solid rgba(20,20,20, 0.8) 4px;
+    border-bottom: solid rgba(20,20,20, 0.8) 4px;
+}
+
+.color-kogtevran-test{
+    color: rgba(34,45,233, 0.9);
+}
+
+.color-griffindor-test{
+    color: rgba(234,25,23, 0.9);
+}
+
+.color-puffendue-test{
+    color: rgba(225,145,46, 0.9);
+}
+
+.color-slizeren-test{
+    color: rgba(24,156,23, 0.9);
+}
+
+.color-button-text-test{
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+
+.color-button-text-test:hover{
+    color: rgba(12,12,2,0.7);
+    font-weight: bold;
+    text-shadow: 3px 7px 5px rgba(10,10,32,0.4), 3px -7px 5px rgba(10,10,32,0.3);
+}
