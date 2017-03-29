@@ -3,23 +3,10 @@
     margin: 10px;
 }
 
-.left-float-position-article-image-big{
+.left-float-position-article-image{
     width: 50%;
     float: left;
-    margin: 10px;
-}
-
-
-.left-float-position-article-image-middle{
-    width: 40%;
-    float: left;
-    margin: 10px;
-}
-
-.left-float-position-article-image-small{
-    width: 30%;
-    float: left;
-    margin: 10px;
+    margin: 10px 30px 10px 10px;
 }
 
 .right-float-position{
@@ -27,23 +14,10 @@
     margin: 10px;
 }
 
-.right-float-position-article-image-big{
+.right-float-position-article-image{
     width: 50%;
     float: right;
-    margin: 10px;
-}
-
-
-.right-float-position-article-image-middle{
-    width: 40%;
-    float: right;
-    margin: 10px;
-}
-
-.right-float-position-article-image-small{
-    width: 30%;
-    float: right;
-    margin: 10px;
+    margin: 10px 10px 10px 30px;
 }
 
 .center-position-news-info-down{

@@ -1,0 +1,14 @@
+.photo-border-news-info{
+    border: solid 5px rgba(0,0,0, 0.8);
+}
+
+.block-content-margin-border{
+    margin: 15px;
+    padding: 15px;
+    border: solid 3px rgba(0,0,0, 0.8);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0, 0.4), -5px -5px 5px 5px rgba(0,0,0, 0.3);
+}
+
+.block-content-margin-border:hover{
+    box-shadow: 5px 5px 5px 5px rgba(60,50,200, 0.4), -5px -5px 5px 5px rgba(60,50,200, 0.3);
+}
