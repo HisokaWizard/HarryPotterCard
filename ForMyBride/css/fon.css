@@ -28,10 +28,43 @@
 }
 
 .library-hp{
-    background: #31708f url("../image/lib-hp-2.jpeg") repeat;
+    background: #31708f url("../image/edb858db7068899715df78518157bacc.jpg") repeat;
     cursor: url("../image/1.cur"), auto;
 }
 
 .fon-libHP-container{
     background: rgba(200,200,200,0.90);
+}
+
+.fon-tonya-test{
+    background: #31708f url("../image/sov_1.png") no-repeat;
+    background-size: cover;
+    cursor: url("../image/1.cur"), auto;
+}
+
+.fon-container-tonya-test{
+    background: rgba(200,200,200,0.85);
+    min-height: 1000px;
+}
+
+.fon-container-tonya-test-question{
+    margin: 0 20px;
+    border-radius: 15%;
+    background: rgba(10,10,10,0.8);
+}
+
+.fon-test-result{
+    background: #31708f url("../image/lib-hp-1.jpeg") repeat;
+    cursor: url("../image/1.cur"), auto;
+}
+
+.fon-container-tonya-result{
+    background: rgba(200,200,200,0.93);
+    min-height: 1080px;
+}
+
+.fon-form-after-exam{
+    background: #31708f url("../image/sov_2.png") no-repeat;
+    background-size: cover;
+    cursor: url("../image/1.cur"), auto;
 }

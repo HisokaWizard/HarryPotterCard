@@ -33,6 +33,66 @@ app.controller("LibraryCtrl", function($location){
         }
     };
 
+    _public.HPGF_flag = false;
+    _public.HPGF = function(){
+        if(_public.HPGF_flag){
+            return _public.HPGF_flag = false;
+        }
+        else{
+            return _public.HPGF_flag = true;
+        }
+    };
+
+    _public.HPOP_flag = false;
+    _public.HPOP = function(){
+        if(_public.HPOP_flag){
+            return _public.HPOP_flag = false;
+        }
+        else{
+            return _public.HPOP_flag = true;
+        }
+    };
+
+    _public.HPHBP_flag = false;
+    _public.HPHBP = function(){
+        if(_public.HPHBP_flag){
+            return _public.HPHBP_flag = false;
+        }
+        else{
+            return _public.HPHBP_flag = true;
+        }
+    };
+
+    _public.HPDH_flag = false;
+    _public.HPDH = function(){
+        if(_public.HPDH_flag){
+            return _public.HPDH_flag = false;
+        }
+        else{
+            return _public.HPDH_flag = true;
+        }
+    };
+
+    _public.FBWFT_flag = false;
+    _public.FBWFT = function(){
+        if(_public.FBWFT_flag){
+            return _public.FBWFT_flag = false;
+        }
+        else{
+            return _public.FBWFT_flag = true;
+        }
+    };
+
+    _public.HPCC_flag = false;
+    _public.HPCC = function(){
+        if(_public.HPCC_flag){
+            return _public.HPCC_flag = false;
+        }
+        else{
+            return _public.HPCC_flag = true;
+        }
+    };
+
     _public.ToMain = function(){
         $location.path("/");
     };

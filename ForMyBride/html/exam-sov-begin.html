@@ -1,39 +1,72 @@
 <!DOCTYPE html>
-<section ng-controller="ExamSOVBeginCtrl as ctrl">
-    <div class="container">
-        <h1>Экзамен по знанию биографии самой знаменитой личности в истории магии!</h1>
+<section ng-controller="ExamSOVBeginCtrl as ctrl" id="test-tonya" class="fon-tonya-test">
+    <div class="container fon-container-tonya-test">
+        <div class="font-hogwards-wizard font-effect" align="center" ng-bind="'Экзамен по знанию биографии самой знаменитой личности в истории магии!'"></div>
         <div id="question">
-            <h2 ng-bind="ctrl.Test[ctrl.quest_id].Question"></h2>
-            <label>
-                <input type="radio" name="name" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].first_answer.id">
-                <span ng-bind="ctrl.Test[ctrl.quest_id].first_answer.answer"></span>
-            </label><br>
-            <label>
-                <input type="radio" name="name" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].second_answer.id">
-                <span ng-bind="ctrl.Test[ctrl.quest_id].second_answer.answer"></span>
-            </label><br>
-            <label>
-                <input type="radio" name="name" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].third_answer.id">
-                <span ng-bind="ctrl.Test[ctrl.quest_id].third_answer.answer"></span>
-            </label><br>
-            <label>
-                <input type="radio" name="name" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].four_answer.id">
-                <span ng-bind="ctrl.Test[ctrl.quest_id].four_answer.answer"></span>
-            </label><br>
-            <label>
-                <input type="radio" name="name" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].fifth_answer.id">
-                <span ng-bind="ctrl.Test[ctrl.quest_id].fifth_answer.answer"></span>
-            </label><br>
-            <label>
-                <input type="radio" name="name" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].six_answer.id">
-                <span ng-bind="ctrl.Test[ctrl.quest_id].six_answer.answer"></span>
-            </label><br>
-            <div ng-if="ctrl.quest_id < ctrl.Test.length-1">
-                <button class="btn btn-info" ng-click="ctrl.NextQuestion(ctrl.quest_id, answer_id)" ng-bind="'Следующий вопрос'"></button>
+            <div class="font-hogwards-wizard size-large font-bold margin-exam" align="center" ng-bind="ctrl.Test[ctrl.quest_id].Question"></div>
+            <div ng-bind="ctrl.InitChecking()"></div>
+            <div class="row font-hogwards-wizard size-small-large fon-container-tonya-test-question font-color-red">
+                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 margin-exam">
+                    <div class="col-xs-6 col-lg-6 col-sm-6 col-md-6" align="center">
+                        <label>
+                            <input type="radio" name="tonya_answer_1" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].first_answer.id">
+                            <span ng-bind="ctrl.Test[ctrl.quest_id].first_answer.answer"></span>
+                        </label>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 col-sm-6 col-md-6" align="center">
+                        <label>
+                            <input type="radio" name="tonya_answer_2" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].second_answer.id">
+                            <span ng-bind="ctrl.Test[ctrl.quest_id].second_answer.answer"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 margin-exam">
+                    <div class="col-xs-6 col-lg-6 col-sm-6 col-md-6" align="center">
+                        <label>
+                            <input type="radio" name="tonya_answer_3" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].third_answer.id">
+                            <span ng-bind="ctrl.Test[ctrl.quest_id].third_answer.answer"></span>
+                        </label>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 col-sm-6 col-md-6" align="center">
+                        <label>
+                            <input type="radio" name="tonya_answer_4" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].four_answer.id">
+                            <span ng-bind="ctrl.Test[ctrl.quest_id].four_answer.answer"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 margin-exam">
+                    <div class="col-xs-6 col-lg-6 col-sm-6 col-md-6" align="center">
+                        <label>
+                            <input type="radio" name="tonya_answer_5" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].fifth_answer.id">
+                            <span ng-bind="ctrl.Test[ctrl.quest_id].fifth_answer.answer"></span>
+                        </label>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 col-sm-6 col-md-6" align="center">
+                        <label>
+                            <input type="radio" name="tonya_answer_6" ng-model="answer_id" ng-value="ctrl.Test[ctrl.quest_id].six_answer.id">
+                            <span ng-bind="ctrl.Test[ctrl.quest_id].six_answer.answer"></span>
+                        </label><br>
+                    </div>
+                </div>
             </div>
-            <div ng-if="ctrl.quest_id == ctrl.Test.length-1">
-                <button class="btn btn-info" ng-click="ctrl.NextQuestion(ctrl.quest_id, answer_id)" ng-bind="'Закончить тест. Результат.'"></button>
+
+            <div ng-if="ctrl.CheckFlag">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12" align="center">
+                        <div ng-if="ctrl.quest_id < ctrl.Test.length-1">
+                            <button class="btn btn-danger font-hogwards-wizard size-middle margin-exam color-button-text-test"
+                                    ng-click="ctrl.NextQuestion(ctrl.quest_id, answer_id)" ng-bind="'Следующий вопрос'">
+                            </button>
+                        </div>
+                        <div ng-if="ctrl.quest_id == ctrl.Test.length-1">
+                            <button class="btn btn-danger font-hogwards-wizard size-middle margin-exam color-button-text-test"
+                                    ng-click="ctrl.NextQuestion(ctrl.quest_id, answer_id)" ng-bind="'Закончить тест. Результат.'">
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>

@@ -22,13 +22,15 @@ app.get('/', function(req, res){
 
 app.get('/students', Students.all);
 
-app.get('/students', Students.findById);
+app.get('/students/:id', Students.findById);
 
 app.post('/students', Students.create);
 
-app.put('/students', Students.update);
+app.put('/students/:id', Students.update);
 
-app.delete('/students', Students.removeById);
+app.delete('/students/:id', Students.removeById);
+
+app.delete('/students', Students.removeAll);
 
 db.connect('mongodb://localhost:27017/students_hogvarts', function(err){
     if(err){

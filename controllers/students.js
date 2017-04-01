@@ -62,3 +62,13 @@ exports.removeById = function(req, res){
         res.sendStatus(200);
     });
 };
+
+exports.removeAll = function(req, res){
+    StudentsCtrl.removeAll(function(err, result){
+        if(err){
+            console.log(err);
+            res.sendStatus(500);
+        }
+        res.sendStatus(200);
+    });
+};
