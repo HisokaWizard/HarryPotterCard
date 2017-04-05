@@ -28,6 +28,8 @@ app.controller("newsCtrl", function($location, newsF){
         $location.path("/lib_HP");
     };
     _public.Articles = newsF;
+
+    newsF.draw_image(10,20);
 });
 
 app.factory("newsF", function(){
