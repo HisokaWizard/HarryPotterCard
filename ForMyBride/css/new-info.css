@@ -12,3 +12,8 @@
 .block-content-margin-border:hover{
     box-shadow: 5px 5px 5px 5px rgba(60,50,200, 0.4), -5px -5px 5px 5px rgba(60,50,200, 0.3);
 }
+
+#list-news-info ul{
+    margin-left: 40px;
+    list-style-image: url("../image/marker_2.png");
+}

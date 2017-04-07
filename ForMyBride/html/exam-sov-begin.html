@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <section ng-controller="ExamSOVBeginCtrl as ctrl" id="test-tonya" class="fon-tonya-test">
     <div class="container fon-container-tonya-test">
-        <div class="font-hogwards-wizard font-effect" align="center" ng-bind="'Экзамен по знанию биографии самой знаменитой личности в истории магии!'"></div>
+        <div class="font-harry-potter font-effect" align="center" ng-bind="'Экзамен по знанию биографии самой знаменитой личности в истории магии!'"></div>
         <div id="question">
-            <div class="font-hogwards-wizard size-large font-bold margin-exam" align="center" ng-bind="ctrl.Test[ctrl.quest_id].Question"></div>
+            <div class="font-harry-potter size-large font-bold margin-exam" align="center" ng-bind="ctrl.Test[ctrl.quest_id].Question"></div>
             <div ng-bind="ctrl.InitChecking()"></div>
-            <div class="row font-hogwards-wizard size-small-large fon-container-tonya-test-question font-color-red">
+            <div class="row font-harry-potter size-small-large fon-container-tonya-test-question font-color-red">
                 <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 margin-exam">
                     <div class="col-xs-6 col-lg-6 col-sm-6 col-md-6" align="center">
                         <label>
@@ -54,12 +54,12 @@
                 <div class="row">
                     <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12" align="center">
                         <div ng-if="ctrl.quest_id < ctrl.Test.length-1">
-                            <button class="btn btn-danger font-hogwards-wizard size-middle margin-exam color-button-text-test"
+                            <button class="btn btn-danger font-harry-potter size-middle margin-exam color-button-text-test"
                                     ng-click="ctrl.NextQuestion(ctrl.quest_id, answer_id)" ng-bind="'Следующий вопрос'">
                             </button>
                         </div>
                         <div ng-if="ctrl.quest_id == ctrl.Test.length-1">
-                            <button class="btn btn-danger font-hogwards-wizard size-middle margin-exam color-button-text-test"
+                            <button class="btn btn-danger font-harry-potter size-middle margin-exam color-button-text-test"
                                     ng-click="ctrl.NextQuestion(ctrl.quest_id, answer_id)" ng-bind="'Закончить тест. Результат.'">
                             </button>
                         </div>
