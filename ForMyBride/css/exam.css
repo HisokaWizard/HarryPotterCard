@@ -1,9 +1,10 @@
 .font-effect{
     font-weight: bolder;
-    font-size: 90px;
+    font-size: 80px;
     color: rgba(218,165,32,0.7);
     text-shadow: 4px 10px 8px rgba(190,0,0,0.4),
     0px -5px 35px rgba(218,100,2,0.3);
+    padding: 30px 0 0 0;
 }
 
 .font-margin-title{
@@ -15,17 +16,17 @@
 }
 
 .font-margin-button{
-    margin: 20px;
+    margin: 20px 5px 5px 5px;
 }
 
 .font-margin-button:hover{
-    margin: 20px;
     color: rgba(12,12,2,0.7);
     text-shadow: 3px 7px 5px rgba(10,10,32,0.4), 3px -7px 5px rgba(10,10,32,0.3);
 }
 
 .table-border-result-exam{
     border: solid rgba(20,20,20, 0.8) 4px;
+    background: rgba(200, 200, 200, 0.2);
 }
 
 .table-border-result-exam-bottom{
@@ -36,22 +37,6 @@
 .table-border-result-exam-right{
     border-right: solid rgba(20,20,20, 0.8) 4px;
     border-bottom: solid rgba(20,20,20, 0.8) 4px;
-}
-
-.color-kogtevran-test{
-    color: rgba(34,45,233, 0.9);
-}
-
-.color-griffindor-test{
-    color: rgba(234,25,23, 0.9);
-}
-
-.color-puffendue-test{
-    color: rgba(225,105,46, 0.9);
-}
-
-.color-slizeren-test{
-    color: rgba(24,156,23, 0.9);
 }
 
 .color-button-text-test{
@@ -75,4 +60,39 @@
     color: rgba(12,12,2,0.7);
     font-weight: bold;
     text-shadow: 3px 7px 5px rgba(10,10,32,0.4), 3px -7px 5px rgba(10,10,32,0.3);
+}
+
+#shadow-window{
+    z-index: 111;
+    background: rgba(30,30,30,0.89);
+    width: 100%;
+    height: 100vh;
+}
+
+.table-exam-res-size{
+    height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+#shadow-window-second{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(210,210,210,0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 555;
+}
+
+#modal-window{
+    z-index: 777;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    width: 500px;
+    height: 90px;
+    background: rgba(200,200,200,0.4);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgba(50,50,52,0.8);
 }

@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <section ng-controller="ExamSOVCtrl as ctrl" class="fon-test-result">
-    <div class="container fon-container-tonya-result" align="center">
-        <div class="font-harry-potter size-x-large font-effect font-margin-title" ng-bind="'Таблица результатов! А где в ней ты?'"></div>
-        <br><select class="font-harry-potter size-middle font-margin-choice" ng-model="facultet">
-            <option selected disabled ng-bind="'---Ваш факультет---'"></option>
-            <option ng-value="'Гриффиндор'" ng-bind="'Гриффиндор'"></option>
-            <option ng-value="'Пуффендуй'" ng-bind="'Пуффендуй'"></option>
-            <option ng-value="'Когтевран'" ng-bind="'Когтевран'"></option>
-            <option ng-value="'Слизерин'" ng-bind="'Слизерин'"></option>
-        </select><br>
-        <div ng-if="'Гриффиндор'==facultet">
-            <table class="table font-harry-potter size-middle table-border-result-exam">
-                <tr class="color-participant-test" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
-                    <td class="table-border-result-exam-right color-griffindor-test" ng-bind="'Участник №'+(id+1)"></td>
-                    <td class="table-border-result-exam-right color-griffindor-test" ng-bind="student.first_name"></td>
-                    <td class="table-border-result-exam-right color-griffindor-test" ng-bind="student.last_name"></td>
-                    <td class="table-border-result-exam-right color-griffindor-test" ng-bind="student.facultet"></td>
-                    <td class="table-border-result-exam-bottom color-griffindor-test" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
-                        ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <div id="shadow-window">
+        <div class="container" align="center">
+            <div class="font-harry-potter size-x-large font-effect" ng-bind="'Результаты экзамена'"></div>
+            <br><select class="font-harry-potter size-middle font-margin-choice" ng-model="facultet">
+                <option selected disabled ng-bind="'---Ваш факультет---'"></option>
+                <option ng-value="'Гриффиндор'" ng-bind="'Гриффиндор'"></option>
+                <option ng-value="'Пуффендуй'" ng-bind="'Пуффендуй'"></option>
+                <option ng-value="'Когтевран'" ng-bind="'Когтевран'"></option>
+                <option ng-value="'Слизерин'" ng-bind="'Слизерин'"></option>
+            </select><br>
 
-        <div ng-if="'Пуффендуй'==facultet">
-            <table class="table font-harry-potter size-middle table-border-result-exam">
-                <tr class="color-participant-test" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
-                    <td class="table-border-result-exam-right color-puffendue-test" ng-bind="'Участник №'+(id+1)"></td>
-                    <td class="table-border-result-exam-right color-puffendue-test" ng-bind="student.first_name"></td>
-                    <td class="table-border-result-exam-right color-puffendue-test" ng-bind="student.last_name"></td>
-                    <td class="table-border-result-exam-right color-puffendue-test" ng-bind="student.facultet"></td>
-                    <td class="table-border-result-exam-bottom color-puffendue-test" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
-                        ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
-                    </td>
-                </tr>
-            </table>
-        </div>
+            <div class="table-exam-res-size">
+                <div ng-if="'Гриффиндор'==facultet">
+                    <table class="table font-harry-potter size-middle table-border-result-exam">
+                        <tr class="color-participant-test text-color-griffindor" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
+                            <td class="table-border-result-exam-right" ng-bind="'Участник №'+(id+1)"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.first_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.last_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.facultet"></td>
+                            <td class="table-border-result-exam-bottom" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
+                                ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-        <div ng-if="'Когтевран'==facultet">
-            <table class="table font-harry-potter size-middle table-border-result-exam">
-                <tr class="color-participant-test" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
-                    <td class="table-border-result-exam-right color-kogtevran-test" ng-bind="'Участник №'+(id+1)"></td>
-                    <td class="table-border-result-exam-right color-kogtevran-test" ng-bind="student.first_name"></td>
-                    <td class="table-border-result-exam-right color-kogtevran-test" ng-bind="student.last_name"></td>
-                    <td class="table-border-result-exam-right color-kogtevran-test" ng-bind="student.facultet"></td>
-                    <td class="table-border-result-exam-bottom color-kogtevran-test" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
-                        ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
-                    </td>
-                </tr>
-            </table>
-        </div>
+                <div ng-if="'Пуффендуй'==facultet">
+                    <table class="table font-harry-potter size-middle table-border-result-exam">
+                        <tr class="color-participant-test text-color-puffendue" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
+                            <td class="table-border-result-exam-right" ng-bind="'Участник №'+(id+1)"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.first_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.last_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.facultet"></td>
+                            <td class="table-border-result-exam-bottom" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
+                                ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-        <div ng-if="'Слизерин'==facultet">
-            <table class="table font-harry-potter size-middle table-border-result-exam">
-                <tr class="color-participant-test" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
-                    <td class="table-border-result-exam-right color-slizeren-test" ng-bind="'Участник №'+(id+1)"></td>
-                    <td class="table-border-result-exam-right color-slizeren-test" ng-bind="student.first_name"></td>
-                    <td class="table-border-result-exam-right color-slizeren-test" ng-bind="student.last_name"></td>
-                    <td class="table-border-result-exam-right color-slizeren-test" ng-bind="student.facultet"></td>
-                    <td class="table-border-result-exam-bottom color-slizeren-test" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
-                        ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
-                    </td>
-                </tr>
-            </table>
+                <div ng-if="'Когтевран'==facultet">
+                    <table class="table font-harry-potter size-middle table-border-result-exam">
+                        <tr class="color-participant-test text-color-raverclouw" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
+                            <td class="table-border-result-exam-right" ng-bind="'Участник №'+(id+1)"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.first_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.last_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.facultet"></td>
+                            <td class="table-border-result-exam-bottom" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
+                                ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div ng-if="'Слизерин'==facultet">
+                    <table class="table font-harry-potter size-middle table-border-result-exam">
+                        <tr class="color-participant-test text-color-slizeren" ng-repeat="(id,student) in ctrl.Student | orderBy:'-result_test'" ng-if="facultet==student.facultet">
+                            <td class="table-border-result-exam-right" ng-bind="'Участник №'+(id+1)"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.first_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.last_name"></td>
+                            <td class="table-border-result-exam-right" ng-bind="student.facultet"></td>
+                            <td class="table-border-result-exam-bottom" ng-controller="ExamSOVBeginCtrl as ex_ctrl"
+                                ng-bind="'Правильных ответов: '+student.result_test+' из '+ex_ctrl.Test.length">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <button class="btn btn-danger font-margin-button font-harry-potter size-middle font-color-black" ng-click="ctrl.ToMain()" ng-bind="'На главную'"></button>
+            <button class="btn btn-danger font-margin-button font-harry-potter size-middle font-color-black" ng-click="ctrl.ToExam()" ng-bind="'Заново тест'"></button>
+            <button class="btn btn-danger font-margin-button font-harry-potter size-middle font-color-black" ng-click="ctrl.ToDeleteResult()" ng-bind="'Очистить результаты'"></button>
         </div>
-        <button class="btn btn-danger font-margin-button font-harry-potter size-middle font-color-black" ng-click="ctrl.ToMain()" ng-bind="'На главную'"></button>
-        <button class="btn btn-danger font-margin-button font-harry-potter size-middle font-color-black" ng-click="ctrl.ToExam()" ng-bind="'Заново тест'"></button>
+    </div>
+    <div ng-if="ctrl.flagDeleteResult">
+        <div id="shadow-window-second">
+            <div id="modal-window">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                        <div class="col-xs-8 col-lg-8 col-sm-8 col-md-8">
+                            <input class="font-harry-potter size-middle"
+                                   style="width: 330px; margin: 20px 0 0 0;"
+                                   type='text' ng-model='password' placeholder="Введите пароль">
+                        </div>
+                        <div class="col-xs-4 col-lg-4 col-sm-4 col-md-4 pull-left">
+                            <button class="btn btn-danger font-margin-button font-harry-potter size-small-large font-color-black" ng-click="ctrl.CheckPassword(password)" ng-bind="'Отправить'"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

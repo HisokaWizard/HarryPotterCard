@@ -18,7 +18,7 @@ img[tabindex="0"]:hover {
 }
 
 .border-image{
-    margin: 10px;
+    margin: 20px;
 }
 
 .title-position{
@@ -27,4 +27,9 @@ img[tabindex="0"]:hover {
 
 .body-position{
     padding: 10px 40px 10px 20px;
+}
+
+#list-love-story ul{
+    margin-left: 40px;
+    list-style-image: url("../image/marker_2.png");
 }

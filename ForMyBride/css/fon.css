@@ -42,19 +42,8 @@
     cursor: url("../image/1.cur"), auto;
 }
 
-.fon-container-tonya-test{
-    background: rgba(200,200,200,0.85);
-    min-height: 1000px;
-}
-
-.fon-container-tonya-test-question{
-    margin: 0 20px;
-    border-radius: 15%;
-    background: rgba(10,10,10,0.8);
-}
-
 .fon-test-result{
-    background: #31708f url("../image/lib-hp-1.jpeg") repeat;
+    background: #31708f url("../image/2ert453.png") repeat;
     cursor: url("../image/1.cur"), auto;
 }
 
