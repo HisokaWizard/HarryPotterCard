@@ -1,20 +1,8 @@
-/*#bh-div{*/
-    /*cursor: url("../image/1.cur"), auto;*/
-/*}*/
-
-/*#bh-div a:hover{*/
-    /*cursor: url("../image/2.cur"), auto;*/
-/*}*/
-
-/*.bh-fon{*/
-    /*/!*background: #31708f url("../image/map_maroder.jpg") no-repeat;*!/*/
-    /*background-size: cover;*/
-/*}*/
-
 .main-page-fon{
-    background: #31708f url("../image/Main-page-fon-2.png") no-repeat;
+    background: #31708f url("../image/main_poster.jpg") no-repeat;
     background-size: cover;
     cursor: url("../image/1.cur"), auto;
+    overflow-y: hidden;
 }
 
 .news-info-page{
@@ -23,13 +11,15 @@
 }
 
 .love-story-fon{
-    background: #31708f url("../image/love-story-2.jpeg") repeat;
+    background: #31708f url("../image/fon_picture/love-story.jpg") no-repeat;
     cursor: url("../image/1.cur"), auto;
+    background-size: cover;
 }
 
 .library-hp{
-    background: #31708f url("../image/edb858db7068899715df78518157bacc.jpg") repeat;
+    background: #31708f url("../image/fon_picture/title_library_1.jpg") no-repeat;
     cursor: url("../image/1.cur"), auto;
+    background-size: cover;
 }
 
 .fon-libHP-container{

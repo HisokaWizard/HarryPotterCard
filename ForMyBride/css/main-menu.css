@@ -140,6 +140,7 @@ label[for="nav-trigger-news-info"] {
 body {
     /* Without this, the body has excess horizontal scroll when the menu is open */
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Micro reset */

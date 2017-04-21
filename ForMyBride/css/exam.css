@@ -63,8 +63,18 @@
 }
 
 #shadow-window{
+    position: fixed;
+    left: 0;
+    top: 0;
     z-index: 111;
-    background: rgba(30,30,30,0.89);
+    background: rgba(30,30,30,0.9);
+    width: 100%;
+    height: 100%;
+}
+
+#shadow-window-result{
+    z-index: 111;
+    background: rgba(30,30,30,0.7);
     width: 100%;
     height: 100vh;
 }
@@ -92,7 +102,7 @@
     left: 35%;
     width: 500px;
     height: 90px;
-    background: rgba(200,200,200,0.4);
+    background: rgba(200,200,200,0.9);
     border-radius: 5px;
     box-shadow: 10px 10px 10px 10px rgba(50,50,52,0.8);
 }

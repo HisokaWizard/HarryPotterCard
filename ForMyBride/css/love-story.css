@@ -10,7 +10,7 @@ img[tabindex="0"]:hover {
 }
 
 .fon-love-story-container{
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.7);
 }
 
 .fon-love-story-container-footer{
@@ -29,7 +29,17 @@ img[tabindex="0"]:hover {
     padding: 10px 40px 10px 20px;
 }
 
-#list-love-story ul{
+.list-love-story ul{
     margin-left: 40px;
     list-style-image: url("../image/marker_2.png");
+}
+
+.scroll-all-length-page{
+    height: 1080px;
+    max-height: 1080px;
+    overflow-y: auto;
+}
+
+.position-container{
+    margin-bottom: 125px;
 }
